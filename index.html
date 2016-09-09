@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sandwich Maker</title>
+	<link rel="stylesheet" href="output.css">
+</head>
+<body>
+
+<div id="bread" class= "selection"><h3>Which type of bread would you like?</h3>
+<form>
+  <input type="checkbox" name="vehicle" value="Honey Oat"> Honey Oat<br>
+  <input type="checkbox" name="vehicle" value="Rye"> Rye<br>
+  <input type="checkbox" name="vehicle" value="Wheat"> Wheat<br>
+  <input type="checkbox" name="vehicle" value="White"> White<br>
+  <input type="checkbox" name="vehicle" value="No Bread"> No Bread<br>
+  <input type="submit" value="Submit">
+</form>
+
+<div id="Meat" class= "selection"><h3>Which type of meat would you like?</h3>
+<form>
+  <input type="checkbox" name="vehicle" value="Turkey">Turkey<br>
+  <input type="checkbox" name="vehicle" value="Ham">Ham<br>
+  <input type="checkbox" name="vehicle" value="Bacon">Bacon<br>
+  <input type="checkbox" name="vehicle" value="Chicken">Chicken<br>
+  <input type="checkbox" name="vehicle" value="No Meat">No Meat<br>
+  <input type="submit" value="Submit">
+</form>
+
+<div id="cheese" class= "selection"><h3>Which type of cheese would you like?</h3>
+<form>
+  <input type="checkbox" name="vehicle" value="American">American<br>
+  <input type="checkbox" name="vehicle" value="Swiss">Swiss<br>
+  <input type="checkbox" name="vehicle" value="Jack">Jack<br>
+  <input type="checkbox" name="vehicle" value="Cheddar">Cheddar<br>
+  <input type="checkbox" name="vehicle" value="No Cheese">No Cheese<br>
+  <input type="submit" value="Submit">
+</form>
+
+<div id="veggies" class= "selection"><h3>Which type of veggies would you like?</h3>
+<form>
+  <input type="checkbox" name="vehicle" value="Lettuce">Lettuce<br>
+  <input type="checkbox" name="vehicle" value="Peppers">Peppers<br>
+  <input type="checkbox" name="vehicle" value="Onions">Onions<br>
+  <input type="checkbox" name="vehicle" value="Kale">Kale<br>
+  <input type="checkbox" name="vehicle" value="No Veggies">No Veggies<br>
+  <input type="submit" value="Submit">
+</form>
+
+<div id="condiments" class= "selection"><h3>Which type of condiments would you like?</h3>
+<form>
+  <input type="checkbox" name="vehicle" value="Mustard">Mustard<br>
+  <input type="checkbox" name="vehicle" value="Ketchup">Ketchup<br>
+  <input type="checkbox" name="vehicle" value="Relish">Relish<br>
+  <input type="checkbox" name="vehicle" value="Pickles">Pickles<br>
+  <input type="checkbox" name="vehicle" value="No Condiments">No Condiments<br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+<br>
+
+<button id="maker" type="button" onclick=""><h4>Place order</h4></button><br>
+
+<div id="output"></div>
+
+	<script type="text/javascript" src="SandwichMaker.js"></script>
+	<script type="text/javascript" src="Meat.js"></script>
+	<script type="text/javascript" src="cheese.js"></script>
+	<script type="text/javascript" src="bread.js"></script>
+	<script type="text/javascript" src="veggies.js"></script>
+	<script type="text/javascript" src="condiments.js"></script>
+	<script type="text/javascript" src="DOMHandler.js"></script>
+
+</body>
+</html>
+
+<!--
+Your project should have one HTML file that has:
+a section of options for each sandwich part
+the ability to select multiple, or zero, choices for each section (such as turkey and bacon, or "no meat")
+an empty DOM element into which the final sandwich order and its cost will be inserted
