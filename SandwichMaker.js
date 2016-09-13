@@ -10,7 +10,6 @@ var totalPrice = 0;
     addTopping: function(toppingPrice) {
       totalPrice += toppingPrice;
       console.log(totalPrice);
-      display.innerHTML=totalPrice;
   
     
     // getTotalPrice: function(){

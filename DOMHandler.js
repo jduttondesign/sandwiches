@@ -36,8 +36,6 @@ MeatChooser.addEventListener("change", function(event) {
  SandwichMaker.addTopping(SandwichMaker.getMeatToppingPrice());
  display.innerHTML += selectedTopping + " " + SandwichMaker.getMeatToppingPrice() + "<br>";
 });
-//
-
 
 cheeseChooser.addEventListener("change", function(event) {
    selectedTopping = event.target.value;
@@ -47,8 +45,6 @@ cheeseChooser.addEventListener("change", function(event) {
  SandwichMaker.addTopping(SandwichMaker.getCheeseToppingPrice());
  display.innerHTML += selectedTopping + " " + SandwichMaker.getCheeseToppingPrice() + "<br>";
 });
-
-
 
  veggiesChooser.addEventListener("change", function(event) {
    selectedTopping = event.target.value;
